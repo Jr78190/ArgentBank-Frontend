@@ -1,0 +1,102 @@
+.transaction-header {
+  display: flex;
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.transactions-date {
+  flex: 1;
+  text-align: center;
+}
+
+.transactions-description {
+  flex: 2;
+  text-align: center;
+}
+
+.transactions-amount {
+  flex: 1;
+  text-align: center;
+}
+
+.transactions-balance {
+  flex: 1;
+  text-align: left;
+}
+
+.transaction-row {
+  background-color: rgb(97, 179, 123);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.transaction-extra-info {
+  margin-top: 10px;
+}
+
+.transactions-type {
+  width: 100%;
+  margin-left: 1.7rem;
+}
+
+.transactions-note {
+  margin-right: 1.7rem;
+}
+
+.item-type {
+  margin-right: 4rem;
+}
+
+.item-category {
+  margin-right: 4.5rem;
+}
+
+.item-note {
+  margin-right: 1rem;
+}
+
+.account-header {
+  display: flex;
+}
+
+
+@media (max-width: 720px) {
+  .transaction-header {
+    flex-direction: column; 
+    text-align: left; 
+  }
+
+  .transactions-date,
+  .transactions-description,
+  .transactions-amount,
+  .transactions-balance {
+    text-align: left;
+    width: 100%; 
+  }
+
+  .transaction-row {
+    flex-direction: column; 
+    text-align: left; 
+  }
+
+  .transactions-type,
+  .transactions-category,
+  .transactions-note {
+    width: 100%; 
+    margin-left: 0; 
+  }
+
+  .item-type,
+  .item-category,
+  .item-note {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; 
+  }
+}
