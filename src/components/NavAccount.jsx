@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux'; 
 import ArgentBankLogo from '../assets/images/ArgentBankLogo.webp';
+import { Link } from 'react-router-dom';
 import '../css/main.css';
 
 function NavAccount() {
@@ -9,14 +10,14 @@ function NavAccount() {
 
   return (
     <nav className="main-nav">
-      <a className="main-nav-logo" href="/">
+      <Link className="main-nav-logo" to="/">
         <img
           className="main-nav-logo-image"
           src={ArgentBankLogo}
           alt="Argent Bank Logo"
         />
         <h1 className="sr-only">Argent Bank</h1>
-      </a>
+      </Link>
       <div className="nav-account">
         <div>
           {username && <span className="username-display"> {username}</span>} 
@@ -25,9 +26,9 @@ function NavAccount() {
         <div>
           <i className="fa-solid fa-gear"></i>
         </div>
-        <a href="./login">
+        <Link to="/login">
         <i className="fa-solid fa-power-off"></i>
-        </a>
+        </Link>
       </div>
     </nav>
   );
