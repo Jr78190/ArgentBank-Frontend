@@ -1,8 +1,8 @@
 {
+  "homepage": "https://jr78190.github.io/ArgentBank-Frontend/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@reduxjs/toolkit": "^2.3.0",
-    "homepage":"https://jr78190.github.io/ArgentBank-Frontend/",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
